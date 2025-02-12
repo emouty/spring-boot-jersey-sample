@@ -44,10 +44,10 @@
 
 		<!--	dependencies added by digma for micrometer	-->
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>org.springframework.boot</groupId>-->
+<!--			<artifactId>spring-boot-starter-actuator</artifactId>-->
+<!--		</dependency>-->
 
 		<!-- https://mvnrepository.com/artifact/org.glassfish.jersey.ext/jersey-micrometer -->
 <!--		<dependency>-->
