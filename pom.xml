@@ -42,47 +42,49 @@
 		</dependency>
 
 
-		<!--	dependencies added by digma for micrometer	-->
+		<!--	dependencies added by digma for micrometer tracing -->
 
-<!--		<dependency>-->
-<!--			<groupId>org.springframework.boot</groupId>-->
-<!--			<artifactId>spring-boot-starter-actuator</artifactId>-->
-<!--		</dependency>-->
+		<!--	TODO: need to add this dependency to the plugin in case of spring boot > 3.2	-->
+		<dependency>
+			<groupId>org.glassfish.jersey.ext</groupId>
+			<artifactId>jersey-micrometer</artifactId>
+		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.glassfish.jersey.ext/jersey-micrometer -->
-<!--		<dependency>-->
-<!--			<groupId>org.glassfish.jersey.ext</groupId>-->
-<!--			<artifactId>jersey-micrometer</artifactId>-->
-<!--&lt;!&ndash;			<version>3.1.10</version>&ndash;&gt;-->
-<!--		</dependency>-->
 
-<!--		<dependency>-->
-<!--			<groupId>io.micrometer</groupId>-->
-<!--			<artifactId>micrometer-registry-otlp</artifactId>-->
-<!--		</dependency>-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aop</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.micrometer</groupId>
+			<artifactId>micrometer-tracing-bridge-otel</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>net.ttddyy.observation</groupId>
+			<artifactId>datasource-micrometer-spring-boot</artifactId>
+			<version>1.0.3</version>
+		</dependency>
+		<dependency>
+			<groupId>io.opentelemetry</groupId>
+			<artifactId>opentelemetry-exporter-otlp</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.github.digma-ai</groupId>
+			<artifactId>digma-spring-boot-micrometer-tracing-autoconf</artifactId>
+			<version>0.7.7</version>
+		</dependency>
 
-<!--		<dependency>-->
-<!--            <groupId>org.springframework.boot</groupId>-->
-<!--            <artifactId>spring-boot-starter-aop</artifactId>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>io.micrometer</groupId>-->
-<!--            <artifactId>micrometer-tracing-bridge-otel</artifactId>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>net.ttddyy.observation</groupId>-->
-<!--            <artifactId>datasource-micrometer-spring-boot</artifactId>-->
-<!--            <version>1.0.3</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>io.opentelemetry</groupId>-->
-<!--            <artifactId>opentelemetry-exporter-otlp</artifactId>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>io.github.digma-ai</groupId>-->
-<!--            <artifactId>digma-spring-boot-micrometer-tracing-autoconf</artifactId>-->
-<!--            <version>0.7.7</version>-->
-<!--        </dependency>-->
+
+		<!--		<dependency>-->
+		<!--			<groupId>io.micrometer</groupId>-->
+		<!--			<artifactId>micrometer-registry-otlp</artifactId>-->
+		<!--		</dependency>-->
+
+
     </dependencies>
 
 	<build>
